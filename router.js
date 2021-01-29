@@ -4,12 +4,11 @@ const express = require("express"),
 
 router
 	.route("/")
-	// .all(
-	// 	cors({
-	// 		origin: "http://google.com",
-	// 		methods: "GET POST"
-	// 	})
-	// )
+	.all(
+		cors({
+			origin: "http://localhost"
+		})
+	)
 	.get((req, res) => res.send("protected hello"));
 
 module.exports = router;
