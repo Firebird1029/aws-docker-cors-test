@@ -1,6 +1,5 @@
 const express = require("express"),
 	morgan = require("morgan"),
-	cors = require("cors"),
 	router = require("./router");
 
 const app = express();
